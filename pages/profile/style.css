@@ -36,6 +36,7 @@ h2 {
 .items {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -59,4 +60,20 @@ h2 {
   color: #808080;
   padding: 8px 20px;
   border: 1px solid #808080;
+}
+
+/* -------------- mobile responsive code ------------- */
+
+@media only screen and (max-width: 767px) {
+  body {
+    height: 100%;
+  }
+
+  .profile {
+    margin: 170px 20px;
+  }
+
+  .items {
+    flex-wrap: wrap;
+  }
 }
