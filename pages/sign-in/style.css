@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../../assets/images/hero-bg.png");
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 30px 50px;
+}
+
+.signin {
+  background: #000000bd;
+  padding: 50px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.signin h1 {
+  font-weight: 700;
+  color: white;
+  font-size: 34px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.inp {
+  background-color: #333333;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 4px;
+}
+
+.inp input {
+  background: transparent;
+  border: none;
+  width: 100%;
+  color: white;
+}
+
+.inp input:focus {
+  outline: none;
+}
+
+.btn-container {
+  margin-top: 30px;
+}
+
+.btn {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e50914;
+  border-radius: 4px;
+}
+
+.btn button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+
+.btn-extra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #b3b3b3;
+  margin-top: 10px;
+}
+
+.signin-extra {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.first {
+  color: #737373;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sec {
+  color: #737373;
+}
+.third {
+  color: #737373;
+}
+
+/* -------------- mobile responsive code ------------- */
+
+@media only screen and (max-width: 767px) {
+  .nav {
+    margin: 20px 20px;
+  }
+  .signin {
+    padding: 35px;
+  }
+
+  /* footer */
+}

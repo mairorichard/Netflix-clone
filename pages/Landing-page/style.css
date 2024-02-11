@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+  color: white;
+}
+
+.hero {
+  background-image: url("../../assets/images/hero-bg.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  background: transparent;
+}
+
+.nav-follow {
+  display: flex;
+  gap: 12px;
+}
+
+.language button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: #aaaaaa 1px solid;
+  background: #000;
+  color: white;
+  padding: 5px;
+}
+
+.signin button {
+  border: none;
+  background: #e50914;
+  color: white;
+  height: 100%;
+  padding: 0 20px;
+  border-radius: 3px;
+}
+
+.hero-txt {
+  margin: 0 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-txt .text {
+  text-align: center;
+}
+
+.hero-txt .text h1 {
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.hero-txt .text p {
+  font-size: 20px;
+}
+
+.cta {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.cta p {
+  font-size: 18px;
+}
+
+.inp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inp button {
+  background: #e50914;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: white;
+  font-size: 20px;
+  padding: 0 24px;
+  height: 40px;
+  border: none;
+}
+
+.inp-input {
+  height: 40px;
+  width: 350px;
+  background: white;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  border: rgb(65, 65, 65) 0.5px solid;
+}
+
+.inp-input input {
+  background: transparent;
+  border: none;
+  width: 100%;
+}
+
+.inp-input input:focus {
+  outline: none;
+}
+
+/* main */
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 200px;
+}
+.main .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.main .item-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.main .item-right .texts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main .item-right .texts h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.main .item .texts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main .item .texts h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+/* /main */
+
+/* FAQ */
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.faq h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.faq .items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: #303030;
+  width: 600px;
+  cursor: pointer;
+}
+
+.faq .item:hover {
+  background: #4b4b4b;
+}
+
+.faq .item img {
+  width: 28px;
+}
+
+.faq .item p {
+  font-size: 22px;
+}
+
+/* /FAQ */
+
+/* footer */
+
+.footer {
+  margin: 200px 200px;
+  color: #757575;
+}
+
+.footer .links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 30px;
+  gap: 15px;
+}
+
+.l-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer .extra {
+  margin-top: 40px;
+}
+
+.footer .language button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: #757575 1px solid;
+  background: #000;
+  color: #757575;
+  padding: 5px;
+}
+
+/* /footer */
+
+/* -------------- mobile responsive code ------------- */
+
+@media only screen and (max-width: 767px) {
+  .hero {
+    gap: 160px;
+    height: 70vh;
+  }
+  .logo img {
+    width: 120px;
+  }
+  .nav {
+    padding: 20px 20px;
+  }
+  .nav-follow {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .signin button {
+    height: 30px;
+    width: 100%;
+  }
+  .hero-txt {
+    margin: 0 20px;
+  }
+  .hero-txt .text h1 {
+    font-size: 32px;
+  }
+  .inp-input {
+    width: 200px;
+  }
+  .inp button {
+    padding: 0 12px;
+    font-size: 16px;
+  }
+
+  /* main */
+  .main {
+    margin: 20px 50px;
+  }
+  .main-img img {
+    width: 300px;
+  }
+  .main .item {
+    flex-direction: column;
+  }
+  .main .item-right {
+    flex-direction: column-reverse;
+  }
+  /* /main */
+
+  /* FAQ */
+
+  .faq {
+    margin: 20px 50px;
+  }
+
+  .faq h2 {
+    text-align: center;
+  }
+
+  .faq .item {
+    width: 300px;
+  }
+  .faq .item p {
+    font-size: 18px;
+  }
+
+  /* /FAQ */
+
+  /* footer */
+
+  .footer {
+    margin: 100px 20px;
+  }
+
+  .footer .links {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  /* /footer */
+}
